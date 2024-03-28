@@ -18,7 +18,7 @@ WHEN I submit the form,
 THEN blog post data is stored to localStorage.
 WHEN the form submits,
 THEN I am redirected to the posts page.
-WHEN I enter try to submit a form without a username, title, or content,
+WHEN I try to submit a form without a username, title, or content,
 THEN I am presented with a message that prompts me to complete the form.
 WHEN I view the posts page,
 THEN I am presented with a header, with a light mode/dark mode toggle, and a "Back" button.
@@ -35,4 +35,6 @@ THEN I can see the title, the content, and the author of the post.
 WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 ```
+
+## Development Process
 

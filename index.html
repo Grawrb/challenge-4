@@ -4,14 +4,42 @@
         <title>Rawb's Raw Blog</title>
         <meta charset= "UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/form.css">
     </head>
     <body>
         <header>
             <h1>Rawb's Raw Blog </h1>
         </header>
         <main>
+            <div class="hero">
+                <h3>Post your raw thoughts</h3>
+                <img src="" alt=""/>
+
+            </div>
+            <form action="blog.html" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Username:</label>
+                        <input type="text" id="name" name="user_name"/>
+                    </li>
+                    <li>
+                        <label for="postTitle">Title:</label>
+                        <input type="text" id="postTitle" name="post_title" />
+                      </li>
+                      <li>
+                        <label for="msg">Post your thoughts:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </li>
+                </ul>
+            </form>
 
         </main>
+        <script>src="./assets/js/logic.js"</script>
+        <script>src="./assets/js/form.js"</script>
     </body>
+    <footer>
+        <h5>Site developed by Robert Maxfield</h5>
+        <a href="">Click here for more info</a>
+    </footer>
 </html>
