@@ -1,0 +1,18 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+li {
+    font-family: "Noticia Text", serif;
+    font-weight: 300;
+    font-style: normal;
+    border: 1.5px solid rgb(52, 3, 3);
+    padding: .5em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: space-evenly;
+}

@@ -1,1 +1,32 @@
-  
+body {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: rgb(159, 201, 226);
+    color: black;
+  }
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hero,
+h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border: 1px;
+    border-color: rgb(106, 26, 26);
+    padding: 0%;
+    font-family: "Noticia Text", serif;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
