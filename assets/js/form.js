@@ -3,6 +3,8 @@ let postTitle = document.getElementById('postTitle');
 let userPost = document.getElementById('msg');
 let submitButton = document.getElementById('submitButton');
 
+
+
 submitButton.addEventListener('click', function (event) {
     if (!userName.value  || !postTitle.value|| !userPost.value) {
         alert("Please fill out all fields");
@@ -16,10 +18,14 @@ submitButton.addEventListener('click', function (event) {
         userName: userName.value,
     };
 
-    let oldBlogs = JSON.parse(localStorage.getItem('blogPost')) || [];
+    
+    let oldBlogs = retrieveBlogPosts();
     oldBlogs.push(blogPost);
 
     localStorage.setItem('blogPost', JSON.stringify(oldBlogs));
+    userName.value = "";
+    postTitle.value = "";
+    userPost.value = "";
 
 
 })

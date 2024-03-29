@@ -11,12 +11,25 @@ body {
     color: white;
 }
 
-h3,
-.hero {
+  .hero,
+h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px;
+    border-color: rgb(106, 26, 26);
+    padding: 0%;
     font-family: "Noticia Text", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+.hero img {
+  width:50%;
+  height: auto;
+  max-width: 450px;
+}
 
 ul {
     list-style-type: none;

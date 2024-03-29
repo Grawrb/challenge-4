@@ -38,3 +38,14 @@ THEN I am presented with a link to the developer's portfolio.
 
 ## Development Process
 
+For this project, I began by creating a basic HTML framework with only the necessary elements for a simple form and landing page.
+I attempted to use as simple a format as possible throughout the HTML and then build out the blog post elements through JavaScript.
+Each HTML page is linked to two seperate stylesheets and script files, one each for general use and then a stylesheet and script file specifically for the form elements.
+All code was written by me from scratch. API's used include JSON, local storage, and Google Fonts.
+As my web portfolio is not finished, I linked to a new repo I plan to build throughout the rest of this bootcamp.
+Below are screenshots of the deployed applications.
+
+![Screenshot of deployed application](./blog-screenshot1.png)
+![Screenshot of deployed application 2](./blog-screenshot2.png)
+
+
