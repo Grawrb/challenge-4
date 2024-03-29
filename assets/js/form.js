@@ -1,16 +1,14 @@
 let userName = document.getElementById('name');
 let postTitle = document.getElementById('postTitle');
 let userPost = document.getElementById('msg');
-let submitButton = document.getElementsByClassName('button');
+let submitButton = document.getElementById('submitButton');
 
-submitButton.addEventListener('submit', function (event) {
-    event.preventDefault();
-    if (userName.value == null || postTitle.value == null || userPost == null) {
+submitButton.addEventListener('click', function (event) {
+    if (!userName.value  || !postTitle.value|| !userPost.value) {
         alert("Please fill out all fields");
-    } else {
-
+        event.preventDefault();
+        return;
     }
-    
 
     const blogPost = {
         postTitle: postTitle.value,
@@ -18,8 +16,10 @@ submitButton.addEventListener('submit', function (event) {
         userName: userName.value,
     };
 
-    localStorage.setItem('blogPost', JSON.stringify(blogPost));
+    let oldBlogs = JSON.parse(localStorage.getItem('blogPost')) || [];
+    oldBlogs.push(blogPost);
 
-    return blogPost
+    localStorage.setItem('blogPost', JSON.stringify(oldBlogs));
+
 
 })
